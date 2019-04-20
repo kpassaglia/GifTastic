@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <style>.btn{margin: 5px;}</style>
+
+    <title>GifTastic Hotspur</title>
+</head>
+
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="/assets/images/images.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Tottenham Hotspur F.C.
+    </a>
+
+    <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" id="player-input" type="search" placeholder="Add Spurs Players" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" id="add" type="submit">Update</button>
+    </form>
+
+</nav>
+<br>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+                <div id="btnDiv" class="buttonDiv">
+                    <h4>Add Players To Display</h4>
+                    <button class="btn btn-secondary" id="starters" type="submit">Quarter Final Team Sheet</button>
+                </div> <br>
+                <div id="gifReturn"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Born</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr" data-value="Hugo Lloris">
+                                <th scope="row">1</th>
+                                <td>Hugo</td>
+                                <td>Lloris</td>
+                                <td>Nice, France</td>
+                            </tr>
+                            <tr class="tr" data-value="Kieran Trippier">
+                                <th scope="row">2</th>
+                                <td>Kieran</td>
+                                <td>Trippier</td>
+                                <td>Bury, England</td>
+                            </tr>
+                            <tr class="tr" data-value="Danny Rose">
+                                <th scope="row">3</th>
+                                <td>Danny</td>
+                                <td>Rose</td>
+                                <td>Doncaster, England</td>
+                            </tr>
+                            <tr class="tr" data-value="Toby Alderweireld">
+                                <th scope="row">4</th>
+                                <td>Toby</td>
+                                <td>Alderweireld</td>
+                                <td>Wilrijk, Belgium</td>
+                            </tr>
+                            <tr class="tr" data-value="Jan Vertonghen">
+                                <th scope="row">5</th>
+                                <td>Jan</td>
+                                <td>Vertonghen</td>
+                                <td>Sint-Niklaas, Belgium</td>
+                            </tr>
+                            <tr class="tr" data-value="Davinson Sanchez">
+                                <th scope="row">6</th>
+                                <td>Davinson</td>
+                                <td>Sanchez</td>
+                                <td>Caloto, Colombia</td>
+                            </tr>
+                            <tr class="tr" data-value="Heung-Min Son">
+                                <th scope="row">7</th>
+                                <td>Heung-Min</td>
+                                <td>Son</td>
+                                <td>Chuncheon, South Korea</td>
+                            </tr>
+                            <tr class="tr" data-value="Harry Winks">
+                                <th scope="row">8</th>
+                                <td>Harry</td>
+                                <td>Winks</td>
+                                <td>Hemel Hempstead, England</td>
+                            </tr>
+                            <tr class="tr" data-value="Harry Kane">
+                                <th scope="row">10</th>
+                                <td>Harry</td>
+                                <td>Kane</td>
+                                <td>London, England</td>
+                            </tr>
+                            <tr class="tr" data-value="Vincent Janssen">
+                                <th scope="row">9</th>
+                                <td>Vincent</td>
+                                <td>Janssen</td>
+                                <td>Heesch, Netherlands</td>
+                            </tr>
+                            <tr class="tr" data-value="Erik Lamela">
+                                <th scope="row">11</th>
+                                <td>Erik</td>
+                                <td>Lamela</td>
+                                <td>Carapachay, Argentina</td>
+                            </tr>
+                            <tr class="tr" data-value="Victor Wanyama">
+                                <th scope="row">12</th>
+                                <td>Victor</td>
+                                <td>Wanyama</td>
+                                <td>Nairobi, Kenya</td>
+                            </tr>
+                            <tr class="tr" data-value="Michel Vorm">
+                                <th scope="row">13</th>
+                                <td>Michel</td>
+                                <td>Vorm</td>
+                                <td>Nieuwegein, Netherlands</td>
+                            </tr>
+                            <tr class="tr" data-value="Georges-Kevin Nkoudou">
+                                <th scope="row">14</th>
+                                <td>Georges-Kevin</td>
+                                <td>Nkoudou</td>
+                                <td>Versailles, Yvelines, France</td>
+                            </tr>
+                            <tr class="tr" data-value="Eric Dier">
+                                <th scope="row">15</th>
+                                <td>Eric</td>
+                                <td>Dier</td>
+                                <td>Cheltenham, England</td>
+                            </tr>
+                            <tr class="tr" data-value="Kyle Walker-Peters">
+                                <th scope="row">16</th>
+                                <td>Kyle</td>
+                                <td>Walker-Peters</td>
+                                <td>Edmonton, England</td>
+                            </tr>
+                            <tr class="tr" data-value="Moussa Sissoko">
+                                <th scope="row">17</th>
+                                <td>Moussa</td>
+                                <td>Sissoko</td>
+                                <td>Le Blanc-Mesnil, France</td>
+                            </tr>
+                            <tr class="tr" data-value="Fernando Llorente">
+                                <th scope="row">18</th>
+                                <td>Fernando</td>
+                                <td>Llorente</td>
+                                <td>Pamplona, Spain</td>
+                            </tr>
+                            <tr class="tr" data-value="Dele Alli">
+                                <th scope="row">20</th>
+                                <td>Dele</td>
+                                <td>Alli</td>
+                                <td>Milton Keynes, England</td>
+                            </tr>
+                            <tr class="tr" data-value="Juan Foyth">
+                                <th scope="row">21</th>
+                                <td>Juan</td>
+                                <td>Foyth</td>
+                                <td>La Plata, Argentina</td>
+                            </tr>
+                            <tr class="tr" data-value="Paulo Gazzaniga">
+                                <th scope="row">22</th>
+                                <td>Paulo</td>
+                                <td>Gazzaniga</td>
+                                <td>Murphy, Argentina</td>
+                            </tr>
+                            <tr class="tr" data-value="Christian Eriksen">
+                                <th scope="row">23</th>
+                                <td>Christian</td>
+                                <td>Eriksen</td>
+                                <td>Middelfart, Denmark</td>
+                            </tr>
+                            <tr class="tr" data-value="Serge Aurier">
+                                <th scope="row">24</th>
+                                <td>Serge</td>
+                                <td>Aurier</td>
+                                <td>Ouragahio, Cote d'lvoire</td>
+                            </tr>
+                            <tr class="tr" data-value="Josh Onomah">
+                                <th scope="row">25</th>
+                                <td>Josh</td>
+                                <td>Onomah</td>
+                                <td>London, England</td>
+                            </tr>
+                            <tr class="tr" data-value="Lucas Moura">
+                                <th scope="row">27</th>
+                                <td>Lucas</td>
+                                <td>Moura</td>
+                                <td>Sao Paulo, Brazil</td>
+                            </tr>
+                            <tr class="tr" data-value="Ben Davies">
+                                <th scope="row">33</th>
+                                <td>Ben</td>
+                                <td>Davies</td>
+                                <td>Neath, Wales</td>
+                            </tr>
+                            <tr class="tr" data-value="Cameron Carter-Vickers">
+                                <th scope="row">38</th>
+                                <td>Cameron</td>
+                                <td>Carter-Vickers</td>
+                                <td>South-on-Sea, England</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <script src="/assets/javascript/giphy.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
