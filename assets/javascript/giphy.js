@@ -46,7 +46,7 @@ $("#starters").on("click", function () {
 
 $('body').on('click', '.btn-primary', function () {
     var players = $(this).attr("data-player");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + players + " Tottenham" + "&api_key=dc6zaTOxFJmzC&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + players + " Tottenham" + "&api_key=Bgnzo1XDRO4o2gJAc0wKz2niIlOYd10O&limit=10";
 
     $.ajax({
         url: queryURL,
